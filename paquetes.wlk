@@ -8,7 +8,7 @@ object paquete {
     return estaPago
   }
 
-  method registrarPago(unValor) {
+  method registrarPago() {
     estaPago = true
   }
 
@@ -55,7 +55,7 @@ object paquetonViajero {
     return 100 * destinos.size()
   }
 
-  method registrarPago(unValor) {
+  method registrarPagoParcial(unValor) {
     montoPagado = (montoPagado + unValor).min(self.precio())
   }
 
